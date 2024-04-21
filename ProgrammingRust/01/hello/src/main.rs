@@ -14,7 +14,8 @@ fn main() {
 
     let mut d = numbers[0];
     for n in &numbers[1..] {
-        d = gcd(d, *n);
+        // 「&」is 参照
+        d = gcd(d, *n); // 「*」is 参照 of 参照
     }
 
     println!("The greatest common divisor of {:?} is {}", numbers, d);
