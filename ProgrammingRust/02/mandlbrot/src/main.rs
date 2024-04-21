@@ -1,8 +1,8 @@
+/// マンデルブロ集合
 use num::Complex;
 
 fn main() {
-    println!("Hello, world!");
-    let c = Complex::new(0.340231, 0.3848);
+    let c = Complex::new(0.24, 0.3);
     let limit = 1000;
     let result = escape_time(c, limit);
     println!("{:?}", result);
